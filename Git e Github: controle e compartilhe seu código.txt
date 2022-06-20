@@ -8,6 +8,12 @@ Indica que a pasta a qual esta o terminal é um repositório
 Mostra Status do Repositório
         git status
 
+       ## Retorno do comando com Status podem surgir alguns termmos são eles
+
+            HEAD: Estado atual do nosso código, ou seja, onde o Git os colocou
+            Working tree: Local onde os arquivos realmente estão sendo armazenados e editados
+            index: Local onde o Git armazena o que será commitado, ou seja, o local entre a working tree e o repositório Git em si.
+
 No manjaro tive um problema então tive que definir o repositório como seguro com o seguinte comando
         git config --global --add safe.directory '/home/carlos.leite/Documentos/CURSOS AURA/GIT e GIThub'
 
@@ -22,3 +28,40 @@ Adicionando um aruqivo no Git  (depois da pasta adicionada como repositorio )
 
 Commit salva as modificações do arquivo
    git commit -m "Criando Arquivo index.html"  -->   -m indica uma mensagem na hora do commit e é um padrão  a ser usado
+
+Após qualquer modificação os comandos para comitar são
+
+    git add nomedoarquivo
+    git commit -m "mensagem"
+
+Mostrar Histórico do GIT
+
+    git log
+
+    git log --oneline  --> mostra cada commit em uma linha bem resumido
+
+    git log -p   ---> mostra as alterações feitas em cada commit
+
+    git log --pretty="format:%h %s %ae "  --> mostra o Hash a mensagem do commit e o email do comitante
+
+    Mais Opções neste Site
+    https://devhints.io/git-log
+
+Mudar configurações  do GIT
+
+    git config --local   --> altera as configurações deste repositorio
+    git config --global  --> altera as configurações de toda a maquina/git
+
+    git config --local user.name "nomeuser"
+    git config --local user.email "seu@email.aqui"
+
+    git config user.name   ---> retorna os dados de usuario e assim por diante com todas as configurações
+
+Usando o GitIgnore .gitignore
+
+criar um arquivo .gitignore e inserir os nomes dos arquivos que não devem ser monitorados
+
+
+
+
+
