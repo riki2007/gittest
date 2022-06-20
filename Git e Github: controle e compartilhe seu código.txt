@@ -1,0 +1,24 @@
+GIT
+VCS (Version Control System),
+
+Indica que a pasta a qual esta o terminal é um repositório
+
+        git init
+
+Mostra Status do Repositório
+        git status
+
+No manjaro tive um problema então tive que definir o repositório como seguro com o seguinte comando
+        git config --global --add safe.directory '/home/carlos.leite/Documentos/CURSOS AURA/GIT e GIThub'
+
+Antes de qualquer interação com o git, você precisa informar quem é você para que ele armazene corretamente os dados do autor de cada uma das alterações no código.
+        git config --local user.name "Seu nome aqui"
+        git config --local user.email "seu@email.aqui"
+
+Adicionando um aruqivo no Git  (depois da pasta adicionada como repositorio )
+
+    git add nomedoarquivo - adiciona um arquivo ao GIT
+    git add .  - adiciona todos os arquivos da pasta no git
+
+Commit salva as modificações do arquivo
+   git commit -m "Criando Arquivo index.html"  -->   -m indica uma mensagem na hora do commit e é um padrão  a ser usado
